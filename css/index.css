@@ -66,4 +66,21 @@ img {
   border: solid 1px var(--pry-clr)
 }
 
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 5%;
+}
+
+h1, h2, h3 {
+  font-size: var(--fs-heading);
+  margin-bottom: var(--h-mb);
+}
+
+h4, h5, h6 {
+  font-size: clamp(1.125rem, 1.0178571428571428rem + 0.5357142857142857vw, 1.5rem);
+}
+
+p {
+  font-size: var(--fs-base);
+}
+
 

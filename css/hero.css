@@ -26,7 +26,6 @@ section.hero {
       & h1 {
         font-size: var(--fs-heading);
         margin-block-end: var(--h-mb);
-        letter-spacing: 5%;
         max-width: 30ch;
       }
 
