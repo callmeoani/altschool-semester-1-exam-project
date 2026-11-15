@@ -11,6 +11,8 @@ section.about {
   /* max-width: calc(79.375rem + 3rem); */
 
   & article h2 {
+    font-size: var(--fs-heading);
+    /* font-size: 28px; */
     margin-block-end: var(--h-mb);
   }
 

@@ -7,6 +7,7 @@
   --fs-xl: clamp(1.95rem, 1.02vi + 1.75rem, 2.66rem);
   --fs-xxl: clamp(2.44rem, 1.59vi + 2.12rem, 3.55rem);
   --fs-xxxl: clamp(3.05rem, 2.4vi + 2.57rem, 4.73rem);
+  --fs-heading: clamp(1.75rem, 1.3928571428571428rem + 1.7857142857142856vw, 3rem);
 
   /* define the colors */
   --pry-clr: hsla(248, 72%, 56%, 1);
