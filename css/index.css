@@ -76,12 +76,20 @@ h1, h2, h3 {
   margin-bottom: var(--h-mb);
 }
 
-h4, h5, h6 {
+h4, h5, h6, dt {
   font-size: clamp(1.125rem, 1.0178571428571428rem + 0.5357142857142857vw, 1.5rem);
 }
 
 p {
   font-size: var(--fs-base);
+}
+
+.logo {
+  color: var(--pry-clr);
+  font-size: var(--fs-heading);
+  font-weight:bold;
+  letter-spacing: 5%;
+  text-decoration: none;
 }
 
 
