@@ -1,0 +1,40 @@
+:root {
+  /* define the font sizes */
+  --fs-sm: clamp(0.8rem, 0.06vi + 0.79rem, 0.84rem);
+  --fs-base: clamp(1rem, 0.18vi + 0.96rem, 1.13rem);
+  --fs-md: clamp(1.25rem, 0.36vi + 1.18rem, 1.5rem);
+  --fs-lg: clamp(1.56rem, 0.62vi + 1.44rem, 2rem);
+  --fs-xl: clamp(1.95rem, 1.02vi + 1.75rem, 2.66rem);
+  --fs-xxl: clamp(2.44rem, 1.59vi + 2.12rem, 3.55rem);
+  --fs-xxxl: clamp(3.05rem, 2.4vi + 2.57rem, 4.73rem);
+
+  /* define the colors */
+  --pry-clr: hsla(248, 72%, 56%, 1);
+  --sec-clr: ;
+  --dark-clr: hsla(0, 0%, 7%, 1);
+  --bg-clr: hsla(39, 100%, 90%, 0.5);
+  --light-clr: hsla(0, 0%, 100%, 1);
+  --icon-bg-clr: hsla(248, 72%, 89%, 0.2);
+
+  /* define the radius' */
+  --base-radius: .5rem;
+
+  /* define the spacings */
+  --line-height: 1.5;
+  --h-mb: clamp(1rem, 1vw + 0.5em, 1.5rem); /* confirm later */
+  --section-width: 92%;
+
+
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+
