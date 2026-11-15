@@ -7,17 +7,32 @@ section.hero {
   position: relative;
   color: var(--light-clr);
 
-   & .overlay {
+  & .overlay {
     background-color: hsla(0, 0%, 0%, 0.55);
-    /* width: 100%; */
     inset: 0;
-    /* z-index: -1; */
     position: absolute;
-   }
+  }
 
-   & article {
+  & article {
     position: relative;
     inset-block-start: 50%;
     transform: translateY(-50%);
-   }
+    width: var(--section-width);
+    margin-inline: auto;
+
+    & hgroup {
+      margin-block-end: clamp(28px, calc(1.6071rem + 0.714vw), 36px);
+
+      & h1 {
+        font-size: var(--fs-heading);
+        margin-block-end: var(--h-mb);
+        letter-spacing: 5%;
+        max-width: 30ch;
+      }
+
+      & p {
+        max-width: 45ch;
+      }
+    }
+  }
 }
