@@ -49,6 +49,7 @@ img {
   width: min(80%, 9.8125rem);
   height: 3.5rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn:hover {

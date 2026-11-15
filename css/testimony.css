@@ -1,0 +1,48 @@
+section.testimony {
+  background-color: var(--bg-clr);
+  padding-block: clamp(79px, calc(73px + 1.875vw), 100px);
+
+  & .testimony-content {
+    width: var(--section-width);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(40px, calc(35.429px + 1.429vw), 56px);
+
+    @media (width >= 1024px) {
+      flex-direction: row;
+    }
+
+    & .testimony-img-wrapper {
+      min-width: clamp(200px, calc(171.429px + 8.929vw), 300px);
+      min-height: clamp(192px, calc(163.429px + 8.929vw), 292px);
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-inline: auto;
+
+      & img {
+        border-radius: 100%;
+      }
+    }
+
+    & .testimony-content-inner {
+      max-width: 85ch;
+
+      & figcaption {
+        margin-block-start: clamp(30px, calc(24.857px + 1.607vw), 48px);
+        margin-block-end: clamp(18px, calc(16.286px + 0.536vw), 24px);
+
+        & .person {
+          font-size: var(--fs-md);
+
+          & .person-name {
+            font-size: var(--fs-lg);
+          }
+        }
+      }
+    }
+  }
+}
