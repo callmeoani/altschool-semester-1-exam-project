@@ -21,8 +21,48 @@
     <link rel="stylesheet" href="/css/footer.css" />
   </head>
   <body>
-    <header style="height: 98px; width: 100%; background-color: #ccc">
-      Heading
+    <header>
+      <div class="header-container">
+        <a href="/index.html" class="logo">CHATTER</a>
+
+        <!-- small screen navs -->
+        <div class="small-nav">
+          <button popovertarget="hamburger-menu" class="menu-btn">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg"
+              alt=""
+            />
+            <span class="sr-only">Open menu</span>
+          </button>
+          <div id="hamburger-menu" popover>
+            <button
+              class="close-btn"
+              popovertarget="hamburger-menu"
+              popovertargetaction="hide"
+            >
+              <span aria-hidden="true">❌</span>
+              <span class="sr-only">Close menu</span>
+            </button>
+
+            <div class="menu-main-sm">
+              <nav class="nav-sm">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about-us">About us</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                  <li><a href="/blogs">Blogs</a></li>
+                </ul>
+              </nav>
+              <div class="extra-sm">
+                <a href="/login">Log in</a>
+                <a href="/signup">Sign up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- large screen navs -->
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -146,12 +186,11 @@
         <div class="random-people">
           <div class="randp-img-wrapper">
             <img src="/assets/images/girl_with_cheeks_turned.jpg" alt="" />
-             
           </div>
           <div class="randp-img-wrapper">
             <img src="/assets/images/young_with_glass.jpg" alt="" />
           </div>
-          <div class="randp-img-wrapper"> 
+          <div class="randp-img-wrapper">
             <img src="/assets/images/older_with_glass.jpg" alt="" />
           </div>
 
@@ -169,7 +208,7 @@
     </main>
     <footer>
       <div class="footer-inner">
-        <a href="/index.html" class="logo " >CHATTER</a>
+        <a href="/index.html" class="logo">CHATTER</a>
         <dl class="extra-navs">
           <div>
             <dt>Explore</dt>
@@ -188,9 +227,9 @@
             <dd><a>Official blog</a></dd>
             <dd><a>Engineering blog</a></dd>
           </div>
-          <!-- Others go here too -->
         </dl>
       </div>
     </footer>
+    <script src="/js/index.js"></script>
   </body>
 </html>
