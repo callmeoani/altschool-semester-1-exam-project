@@ -11,7 +11,7 @@ header {
     background-color: transparent;
     position: sticky;
     top: 0;
-    border-block: solid 1px hsla(0, 0%, 82%, 1);
+    border: solid 1px hsla(0, 0%, 82%, 1);
     height: 4.375rem;
     background-color: var(--light-clr);
     padding-inline-start: clamp(1rem, calc(0px + 5vw), 4.5rem);
