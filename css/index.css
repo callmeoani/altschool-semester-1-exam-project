@@ -28,7 +28,7 @@
 
   /* define the spacings */
   --line-height: 1.5;
-  --h-mb: clamp(1rem, 1vw + 0.5em, 1.5rem); /* confirm later */
+  --h-mb: clamp(1rem, 1vw + 0.5em, 1.5rem);
   --section-width: 92%;
 }
 
@@ -41,7 +41,6 @@ body {
   position: relative;
 
   & main {
-    /* padding-top: 98px; */
     flex: 1;
   }
 }
@@ -68,10 +67,9 @@ a {
 
   &:hover {
     transition: transform 300ms ease-in-out 0s;
-  transform: translateY(-3px) scale(1.02);
+    transform: translateY(-3px) scale(1.02);
   }
 }
-
 
 .btn-solid {
   color: var(--light-clr);

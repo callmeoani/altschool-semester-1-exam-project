@@ -41,7 +41,6 @@ section.join {
       }
     }
     & .randp-img-wrapper:nth-child(2) {
-      /* margin-inline-start: clamp(120px, calc(97.714px + 6.964vw), 198px); */
       @media (width >= 1024px) {
         margin-inline-start: auto;
       }

@@ -23,7 +23,7 @@
   <body>
     <header>
       <div class="header-container">
-        <a href="/index.html" class="logo">CHATTER</a>
+        <a href="/index.html" class="logo" >CHATTER</a>
 
         <!-- small screen navs -->
         <div class="small-nav">
@@ -31,6 +31,7 @@
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg"
               alt=""
+              aria-hidden="true"
             />
             <span class="sr-only">Open menu</span>
           </button>
@@ -80,7 +81,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="overlay"></div>
+        <div class="overlay" aria-hidden="true"></div>
         <article>
           <hgroup>
             <h1>Welcome to Chatter: A Haven for Text-Based Content</h1>
@@ -126,7 +127,7 @@
         </article>
         <div class="cards">
           <div class="card">
-            <div class="card-icon-wrapper">
+            <div class="card-icon-wrapper" aria-hidden="true">
               <img
                 src="/assets/images/carbon_analytics.svg"
                 alt=""
@@ -140,7 +141,7 @@
             </p>
           </div>
           <div class="card">
-            <div class="card-icon-wrapper">
+            <div class="card-icon-wrapper" aria-hidden="true">
               <img
                 src="/assets/images/fluent_people-community-32-filled.svg"
                 alt=""
@@ -154,7 +155,7 @@
             </p>
           </div>
           <div class="card">
-            <div class="card-icon-wrapper">
+            <div class="card-icon-wrapper" aria-hidden="true">
               <img
                 src="/assets/images/content_vector.svg"
                 alt=""
@@ -197,7 +198,7 @@
         </div>
       </section>
       <section class="join">
-        <div class="random-people">
+        <div class="random-people" aria-hidden="true">
           <div class="randp-img-wrapper">
             <img src="/assets/images/girl_with_cheeks_turned.jpg" alt="" />
           </div>
@@ -207,8 +208,6 @@
           <div class="randp-img-wrapper">
             <img src="/assets/images/older_with_glass.jpg" alt="" />
           </div>
-
-          <!-- some other images too -->
         </div>
         <article>
           <h2>Write, read and connect with great minds on chatter</h2>
@@ -244,6 +243,5 @@
         </dl>
       </div>
     </footer>
-    <script src="/js/index.js"></script>
   </body>
 </html>

@@ -17,8 +17,7 @@ section.why {
       padding-inline: min(8%, 1.125rem);
       padding-block-start: 1rem ;
       padding-block-end: 1.5rem;
-      /* display: grid; */
-      grid-template-rows: repeat(3, 1fr);
+
 
       & .card-icon-wrapper {
         width: 92px;
