@@ -7,6 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: clamp(50px, calc(-459.091px + 50.909vw), 274px);
     background-color: transparent;
     position: sticky;
     top: 0;
@@ -25,6 +26,10 @@ header {
 }
 
 .small-nav {
+  @media (width >= 1000px) {
+    display: none;
+  }
+
   & .menu-btn {
     background: none;
     border: none;
@@ -81,68 +86,112 @@ header {
       filter: grayscale(1) drop-shadow(2px 3px 0 var(--pry-clr));
     }
   }
-}
 
-.menu-main-sm {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding-block-start: 4rem;
-
-  & .nav-sm ul {
-    list-style-type: none;
-    padding: 0;
+  & .menu-main-sm {
     display: flex;
     flex-direction: column;
-    gap: 0rem;
+    gap: 2rem;
+    padding-block-start: 4rem;
+  
+    & .nav-sm ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+  
+      & li {
+        & a {
+          color: inherit;
+          font-size: 1.2rem;
+          display: inline-block;
+          padding: 1rem;
+          width: 100%;
+          /* background-color: red; */
+  
+          &:hover {
+            /* border-block: solid 1px var(--pry-clr); */
+            font-weight: 700;
+            background-color: var(--outline-hover-bg);
+          }
+        }
+      }
+    }
+  
+    & .extra-sm {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      font-weight: 500;
+  
+      & a {
+        text-align: center;
+        display: inline-block;
+        padding-block: 1rem;
+  
+        &[href*="login"] {
+          color: var(--pry-clr);
+  
+          &:hover {
+            font-weight: 700;
+            background-color: var(--outline-hover-bg);
+          }
+        }
+  
+        &[href*="signup"] {
+          color: var(--light-clr);
+          background-color: var(--pry-clr);
+  
+          &:hover {
+            font-weight: 700;
+            background-color: var(--solid-hover-bg);
+          }
+        }
+      }
+    }
+  }
+}
 
-    & li {
+.large-nav {
+  display: none;
+  @media (width >= 1000px) {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  & nav {
+    flex: 1;
+
+    & ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      gap: clamp(16px, calc(12.571px + 0.952vw), 24px);
+
       & a {
         color: inherit;
-        font-size: 1.2rem;
-        display: inline-block;
-        padding: 1rem;
-        width: 100%;
-        /* background-color: red; */
+        font-weight: bold;
 
         &:hover {
-          /* border-block: solid 1px var(--pry-clr); */
-          font-weight: 700;
-          background-color: var(--outline-hover-bg);
+          color: var(--pry-clr)
         }
       }
     }
   }
 
-  & .extra-sm {
+  & .extra-lg {
     display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    font-weight: 500;
+    align-items: center;
+    min-width: 300px;
+    max-width: 338px;
+    gap: clamp(12px, calc(6.857px + 1.429vw), 24px);
 
-    & a {
-      text-align: center;
-      display: inline-block;
-      padding-block: 1rem;
-
-      &[href*="login"] {
-        color: var(--pry-clr);
-
-        &:hover {
-          font-weight: 700;
-          background-color: var(--outline-hover-bg);
-        }
-      }
-
-      &[href*="signup"] {
-        color: var(--light-clr);
-        background-color: var(--pry-clr);
-
-        &:hover {
-          font-weight: 700;
-          background-color: var(--solid-hover-bg);
-        }
-      }
-    }
+     & a {
+      /* color: inherit */
+     }
   }
+
 }
+
+

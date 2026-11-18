@@ -65,21 +65,30 @@ a {
   height: 3.5rem;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    transition: transform 300ms ease-in-out 0s;
+  transform: translateY(-3px) scale(1.02);
+  }
 }
 
-.btn:hover {
-  transition: transform 300ms ease-in-out 0s;
-  transform: translateY(-3px) scale(1.02);
-}
 
 .btn-solid {
   color: var(--light-clr);
   background-color: var(--pry-clr);
+
+  &:hover {
+    background-color: var(--solid-hover-bg);
+  }
 }
 
 .btn-outline {
   color: var(--dark-clr);
   border: solid 1px var(--pry-clr);
+
+  &:hover {
+    background-color: var(--outline-hover-bg);
+  }
 }
 
 h1,
