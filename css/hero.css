@@ -16,9 +16,11 @@ section.hero {
     position: relative;
     inset-block-start: 50%;
     transform: translateY(-50%);
-    width: var(--section-width);
+    /* width: var(--section-width); */
+    inline-size: var(--section-width);
     margin-inline: auto;
-    max-width: 61.5rem;
+    /* max-width: 61.5rem; */
+    max-inline-size: 61.5rem;
 
     & hgroup {
       margin-block-end: clamp(28px, calc(1.6071rem + 0.714vw), 36px);
@@ -26,11 +28,13 @@ section.hero {
       & h1 {
         font-size: var(--fs-heading);
         margin-block-end: var(--h-mb);
-        max-width: 30ch;
+        /* max-width: 30ch; */
+        max-inline-size: 30ch;
       }
 
       & p {
-        max-width: 45ch;
+        /* max-width: 45ch; */
+        max-inline-size: 45ch;
       }
     }
   }

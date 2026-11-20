@@ -2,7 +2,8 @@ footer {
   background-color: var(--bg-clr);
 
   & .footer-inner {
-    width: var(--section-width);
+    /* width: var(--section-width); */
+    inline-size: var(--section-width);
     padding-block-start: clamp(50px, calc(47.143px + 0.893vw), 60px);
     padding-block-end: clamp(100px, calc(81.429px + 5.804vw), 165px);
     margin-inline: auto;

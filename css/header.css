@@ -111,6 +111,10 @@ header {
             font-weight: 700;
             background-color: var(--outline-hover-bg);
           }
+
+          &[aria-current="page"] {
+            color: var(--pry-clr);
+          }
         }
       }
     }
@@ -171,6 +175,11 @@ header {
         font-weight: bold;
 
         &:hover {
+          color: var(--pry-clr);
+          text-decoration: underline;
+        }
+
+        &[aria-current="page"] {
           color: var(--pry-clr);
         }
       }

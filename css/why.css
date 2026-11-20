@@ -15,9 +15,8 @@ section.why {
       border: solid 1px hsla(0, 0%, 82%, 1);
       border-radius: var(--base-radius);
       padding-inline: min(8%, 1.125rem);
-      padding-block-start: 1rem ;
+      padding-block-start: 1rem;
       padding-block-end: 1.5rem;
-
 
       & .card-icon-wrapper {
         width: 92px;
@@ -35,11 +34,8 @@ section.why {
       }
 
       & h4.card-title {
-        margin-block: .75rem;
+        margin-block: 0.75rem;
       }
     }
   }
-
-
-
 }

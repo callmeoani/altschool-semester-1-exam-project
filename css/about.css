@@ -2,10 +2,12 @@ section.about {
   display: grid;
   gap: clamp(40px, calc(27.429px + 3.929vw), 84px);
   padding-block: clamp(3.125rem, calc(2.3036rem + 4.1071vw), 6rem);
-  max-width: calc(79.375rem);
+  /* max-width: calc(79.375rem); */
+  max-inline-size: calc(79.375rem);
   margin-inline: auto;
   font-size: var(--fs-base);
-  width: var(--section-width);
+  /* width: var(--section-width); */
+  inline-size: var(--section-width);
 
   & article h2 {
     font-size: var(--fs-heading);
@@ -14,7 +16,8 @@ section.about {
 
   & .img-container {
     grid-column: span 1;
-    max-width: 31.25rem;
+    /* max-width: 31.25rem; */
+    max-inline-size: 31.25rem;
     margin: 0 auto;
   }
 
