@@ -9,7 +9,9 @@ footer {
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    gap: clamp(50px, calc(35.714px + 4.464vw), 100px);;
+    gap: clamp(50px, calc(35.714px + 4.464vw), 100px);
+    max-width: 77.5625rem;
+  
 
     @media (width >= 1024px) {
       flex-direction: row;

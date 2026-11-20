@@ -5,6 +5,7 @@ section.testimony {
   & .testimony-content {
     width: var(--section-width);
     margin-inline: auto;
+    max-width: 77.5625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
